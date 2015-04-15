@@ -1,0 +1,45 @@
+{
+  "name": "grunt-cssnano",
+  "version": "0.0.0",
+  "description": "Minify CSS",
+  "license": "MIT",
+  "repository": "sindresorhus/grunt-cssnano",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "files": [
+    "tasks"
+  ],
+  "keywords": [
+    "gruntplugin",
+    "css",
+    "style",
+    "stylesheet",
+    "minify",
+    "compress",
+    "cssnano",
+    "nano",
+    "optimize",
+    "optimise",
+    "optimization",
+    "optimisation",
+    "postcss"
+  ],
+  "dependencies": {
+    "cssnano": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-nodeunit": "^0.4.1"
+  }
+}
