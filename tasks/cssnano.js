@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 		var opts = this.options();
 
 		this.files.forEach(function (el) {
-			grunt.file.write(el.dest, cssnano(grunt.file.read(el.src[0]), opts));
+			grunt.file.write(el.dest, cssnano.process(grunt.file.read(el.src[0]), opts));
 		});
 	});
 };
