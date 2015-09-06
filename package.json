@@ -34,7 +34,7 @@
     "postcss"
   ],
   "dependencies": {
-    "cssnano": "^2.0.0"
+    "cssnano": "^3.0.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
