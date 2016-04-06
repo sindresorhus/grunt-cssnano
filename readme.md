@@ -41,4 +41,4 @@ See the `cssnano` [options](https://github.com/ben-eb/cssnano#options).
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

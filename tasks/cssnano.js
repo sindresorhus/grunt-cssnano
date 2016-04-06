@@ -6,12 +6,10 @@ module.exports = function (grunt) {
 		var cb = this.async();
 		var opts = this.options();
 
-		Promise.all(this.files.reduce(function (promises, el) {
-			var promise = cssnano.process(grunt.file.read(el.src[0]), opts).then(function (result) {
+		Promise.all(this.files.map(function (el) {
+			return cssnano.process(grunt.file.read(el.src[0]), opts).then(function (result) {
 				grunt.file.write(el.dest, result.css);
 			});
-			promises.push(promise);
-			return promises;
-		}, [])).then(cb);
+		})).then(cb);
 	});
 };
