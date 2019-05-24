@@ -1,5 +1,6 @@
 'use strict';
-module.exports = function (grunt) {
+
+module.exports = grunt => {
 	grunt.initConfig({
 		cssnano: {
 			compile: {
@@ -9,10 +10,14 @@ module.exports = function (grunt) {
 			}
 		},
 		nodeunit: {
-			tasks: ['test/test.js']
+			tasks: [
+				'test/test.js'
+			]
 		},
 		clean: {
-			test: ['test/tmp/**']
+			test: [
+				'test/tmp/**'
+			]
 		}
 	});
 

@@ -1,49 +1,49 @@
 {
-  "name": "grunt-cssnano",
-  "version": "2.1.0",
-  "description": "Minify CSS",
-  "license": "MIT",
-  "repository": "sindresorhus/grunt-cssnano",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=0.12.0"
-  },
-  "scripts": {
-    "test": "xo && grunt"
-  },
-  "files": [
-    "tasks"
-  ],
-  "keywords": [
-    "gruntplugin",
-    "css",
-    "style",
-    "stylesheet",
-    "minify",
-    "compress",
-    "cssnano",
-    "nano",
-    "optimize",
-    "optimise",
-    "optimization",
-    "optimisation",
-    "postcss"
-  ],
-  "dependencies": {
-    "cssnano": "^3.0.0"
-  },
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-cli": "^1.2.0",
-    "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-nodeunit": "^1.0.0",
-    "xo": "*"
-  },
-  "peerDependencies": {
-    "grunt": ">=0.4.0"
-  }
+	"name": "grunt-cssnano",
+	"version": "2.1.0",
+	"description": "Minify CSS",
+	"license": "MIT",
+	"repository": "sindresorhus/grunt-cssnano",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "xo && grunt"
+	},
+	"files": [
+		"tasks"
+	],
+	"keywords": [
+		"gruntplugin",
+		"css",
+		"style",
+		"stylesheet",
+		"minify",
+		"compress",
+		"cssnano",
+		"nano",
+		"optimize",
+		"optimise",
+		"optimization",
+		"optimisation",
+		"postcss"
+	],
+	"dependencies": {
+		"cssnano": "^3.10.0"
+	},
+	"devDependencies": {
+		"grunt": "^1.0.1",
+		"grunt-cli": "^1.2.0",
+		"grunt-contrib-clean": "^2.0.0",
+		"grunt-contrib-nodeunit": "^2.0.0",
+		"xo": "^0.24.0"
+	},
+	"peerDependencies": {
+		"grunt": ">=1"
+	}
 }

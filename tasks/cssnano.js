@@ -1,15 +1,18 @@
 'use strict';
-var cssnano = require('cssnano');
+const cssnano = require('cssnano');
 
-module.exports = function (grunt) {
+module.exports = grunt => {
 	grunt.registerMultiTask('cssnano', 'Minify CSS', function () {
-		var cb = this.async();
-		var opts = this.options();
+		const done = this.async();
+		const options = this.options();
 
-		Promise.all(this.files.map(function (el) {
-			return cssnano.process(grunt.file.read(el.src[0]), opts).then(function (result) {
-				grunt.file.write(el.dest, result.css);
-			});
-		})).then(cb);
+		(async () => {
+			await Promise.all(this.files.map(async file => {
+				const result = await cssnano.process(grunt.file.read(file.src[0]), options);
+				grunt.file.write(file.dest, result.css);
+			}));
+
+			done();
+		})().catch(grunt.fatal);
 	});
 };
